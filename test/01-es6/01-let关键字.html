@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>let关键字</title>
+</head>
+<body>
+    <script>
+        let a = 'aaaa'
+        a = 'AAAA'
+        console.log(a)
+
+        // var有变量提升
+        console.log(b) // undefined
+        var b = 'bbbb'
+
+        // let没有变量提升
+        console.log(c)
+        let c = 'cccc' // 报错
+    </script>
+</body>
+</html>

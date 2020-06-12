@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>箭头函数的this</title>
+</head>
+<body>
+    <script>
+        // 创建时的this是谁，运行的时候this就是谁
+        let person = {
+            name : 'qjh',
+            sayHi() {
+                console.log(this) // person
+                var _this = this
+                // window.setTimeout(function () {
+                //     console.log(this) // window
+                //     console.log(_this) // person
+                // },100)
+
+                setTimeout(() =>{
+                    console.log(this) // person
+                    console.log(_this) // person
+                },100)
+            }
+        }
+        person.sayHi()
+    </script>
+</body>
+</html>

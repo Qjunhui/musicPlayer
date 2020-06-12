@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对象简化赋值</title>
+</head>
+<body>
+    <script>
+        // 如果属性名和变量名相同，可以简写
+        // 方法可以省略 function 关键字
+        let name = 'QQ'
+        let city = 'beijing'
+        let person = {
+            name, // name : name,
+            city, //city : city
+            sayHello() {
+                console.log('hi')
+            }
+        }
+        console.log(person)
+        person.sayHello();
+
+    </script>
+</body>
+</html>
